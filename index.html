@@ -44,45 +44,434 @@
   <div class="slides">
     <section>
 
-<h1>This is Slide</h1>
-<p>Slide page 1.</p>
+<style type="text/css">
+  .reveal h1,
+  .reveal h2,
+  .reveal h3,
+  .reveal h4,
+  .reveal h5,
+  .reveal h6 {
+    text-transform: none;
+  }
+</style>
 
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+<h1>えっ!<br><span style="color:pink">GR-ROSE</span>って<br>　<span style="color:blue">A*m</span>じゃないの？<br>から始めた話</h1>
 
-<ul>
-  <li>Morbi</li>
-  <li>orci</li>
-  <li>lorem</li>
-</ul>
-
-<p><a href="http://example.com/">example.com</a></p>
-
-</section>
-<section>
-
-<h2>This is page 2</h2>
-
-</section>
-<section>
-<section>
-
-<h2>This is first vertical</h2>
+<p><a href="https://nagahisa.github.io/20211113-algyan/#/">https://nagahisa.github.io/20211113-algyan/#/</a></p>
 
 </section>
 <section>
 
-<h2>Second vertical</h2>
+<h2>About me</h2>
+
+<p>```json: aboutme<br>
+aboutme.json<br>
+{ <br>
+    “name”:　           “Kenzo Nagahisa”,<br>
+    “twitter”:          “<a href="https://github.com/kenzonag" class="user-mention">@kenzonag</a>”,<br>
+    “screen_name” :     “けんぞう”,<br>
+    “interest”: [<br>
+        {<br>
+            “topic”:   “電子工作”,<br>
+            “level”:    “全くの初心者”<br>
+        },<br>
+        {<br>
+            “topic”:   “Elixir/Nerves”,<br>
+            “level”:    “永遠の初心者”<br>
+        }<br>
+    ] <br>
+}</p>
+<pre><code>
+BLOG 最近全然サボってますが・・・&lt;br&gt;
+[qiita.com/nagahisa](https://qiita.com/nagahisa),
+[medium.com/@kenzonag](https://medium.com/@kenzonag)
+
+
+&lt;div&gt;DIVIDER&lt;/div&gt;
+
+
+## そもそもの極めて個人的な動機
+
+
+&lt;div&gt;VERTICAL_START&lt;/div&gt;
+
+* テレビのリモコンが壊れました orz
+* ググって ラズパイゼロでこんなの作りました
+
+
+&lt;div&gt;DIVIDER&lt;/div&gt;
+
+
+## 我が家の一大プロジェクト
+
+![構成概要](https://camo.qiitausercontent.com/8f39580060f22225cd45ac4162df511b8eb58c77/68747470733a2f2f71696974612d696d6167652d73746f72652e73332e616d617a6f6e6177732e636f6d2f302f3136343738362f35643731393961662d343036382d636139342d363731352d3939646337613563656237382e6a706567)
+
+参考サイト&lt;br&gt;
+[レッツラズパイ！〜Google HomeでLピカさせよう編〜](https://qiita.com/westvirginia/items/47437d547485cd2784ef)&lt;br&gt;
+[赤外線LEDドライブ回路の決定版](https://vintagechips.wordpress.com/2013/10/05/%E8%B5%A4%E5%A4%96%E7%B7%9Aled%E3%83%89%E3%83%A9%E3%82%A4%E3%83%96%E5%9B%9E%E8%B7%AF%E3%81%AE%E6%B1%BA%E5%AE%9A%E7%89%88/)
+
+
+&lt;div&gt;DIVIDER&lt;/div&gt;
+
+
+ Wifiが不安定なので有線LANもつけました
+&lt;img src="img/20211030100151.jpg"
+     alt="rpi0+有線LAN"&gt;
+
+
+&lt;div&gt;DIVIDER&lt;/div&gt;
+
+
+# 結構な不満(^^;
+
+&lt;div&gt;VERTICAL_END&lt;/div&gt;
+
+* 有線LANボード価格が本体の3倍
+* Linux パッチ適用メンドイ
+* OS起動時にPython動かすって
+&lt;br&gt;
+...OS要らんやろ
+&lt;br&gt;
+&lt;br&gt;
+
+## 噂に聞く&lt;span style="color:green"&gt;Arduino&lt;/span&gt;とかで&lt;br&gt;何とかならんもんか？
+
+
+
+&lt;div&gt;DIVIDER&lt;/div&gt;
+
+
+## なんか、無料でトライ&lt;br&gt;出来るらしいぞ
+
+&lt;div&gt;DIVIDER&lt;/div&gt;
+
+
+</code></pre>
+<p>「今回、ルネサスエレクトロニクス株式会社様の全面的なご協力のもと、<br>
+「がじぇっとるねさすプロジェクトのIoT Edgeデバイス<br>
+「GR-ROSE(ジーアール・ローズ)」と周辺部材をどんとご提供頂き、<br>
+コンテストを開催する運びとなりました！」</p>
+<pre><code>[GR-ROSE IoTシステム開発コンテスト meet up！](https://algyan.connpass.com/event/220366/)
+
+
+&lt;div&gt;DIVIDER&lt;/div&gt;
+
+
+## *ROS*とか*IoT Edge*とか&lt;br&gt;謎の呪文があるけど&lt;br&gt;&lt;span style="color:green"&gt;Arduino&lt;/span&gt;って書いてあるし&lt;br&gt;まっ何とかなるか！
+
+
+&lt;div&gt;DIVIDER&lt;/div&gt;
+
+
+
+&lt;blockquote class="twitter-tweet"&gt;&lt;p lang="ja" dir="ltr"&gt;&lt;a href="https://twitter.com/hashtag/ALGYAN?src=hash&amp;amp;ref_src=twsrc%5Etfw"&gt;#ALGYAN&lt;/a&gt; &lt;a href="https://twitter.com/hashtag/%E3%81%8C%E3%81%98%E3%81%87%E3%82%8B%E3%81%AD?src=hash&amp;amp;ref_src=twsrc%5Etfw"&gt;#がじぇるね&lt;/a&gt;&lt;br&gt;可愛いボードが届きましたー。&lt;br&gt;が、がんばらねば(^^; &lt;a href="https://t.co/FGuDnYXB2c"&gt;pic.twitter.com/FGuDnYXB2c&lt;/a&gt;&lt;/p&gt;&amp;mdash; けんぞう (@kenzonag) &lt;a href="https://twitter.com/kenzonag/status/1433687177586638852?ref_src=twsrc%5Etfw"&gt;September 3, 2021&lt;/a&gt;&lt;/blockquote&gt; &lt;script async src="https://platform.twitter.com/widgets.js" charset="utf-8"&gt;&lt;/script&gt;
+
+
+&lt;div&gt;DIVIDER&lt;/div&gt;
+
+
+# 「RX65N」搭載
+
+
+&lt;div&gt;DIVIDER&lt;/div&gt;
+
+
+## えっ、&lt;span style="color:pink"&gt;GR-ROSE&lt;/span&gt;って&lt;br&gt;　&lt;span style="color:blue"&gt;A*m&lt;/span&gt;じゃないの？？
+
+
+&lt;div&gt;DIVIDER&lt;/div&gt;
+
+
+# &lt;span style="color:green"&gt;Arduino&lt;/span&gt;って&lt;br&gt;&lt;span style="color:blue"&gt;　A*m&lt;/span&gt;じゃないの？？
+
+
+
+&lt;div&gt;DIVIDER&lt;/div&gt;
+
+
+![勘違い](https://career-picks.com/wp-content/uploads/2018/10/%E5%8B%98%E9%81%95%E3%81%84%E3%81%AE%E6%84%8F%E5%91%B3%E3%81%A8%E3%81%AF.001.webp)
+
+
+&lt;div&gt;DIVIDER&lt;/div&gt;
+
+
+# と・と・とりあえず&lt;br&gt;頑張ろう
+
+
+&lt;div&gt;DIVIDER&lt;/div&gt;
+
+
+# Step.0
+
+&lt;div&gt;DIVIDER&lt;/div&gt;
+
+e2studioに出鼻を挫かれる&lt;br&gt;
+
+
+&lt;div&gt;DIVIDER&lt;/div&gt;
+
+
+# W.I.P 
+##  Webコンパイラに救われました
+
+
+&lt;div&gt;DIVIDER&lt;/div&gt;
+
+
+# Step.1
+
+&lt;div&gt;DIVIDER&lt;/div&gt;
+
+BeeBotte Arduino Tutorialやってみる&lt;br&gt;
+
+[Led Control](https://beebotte.com/tutorials/led_control)
+
+</code></pre>
+<p>This tutorial presents how Beebotte can be used<br>
+ to control a led connected to an Arduino board. <br>
+We will use MQTT protocol to connect Arduino<br>
+ to Beebotte to subscribe to messages to turn ON or OFF the led.</p>
+<pre><code>
+
+&lt;div&gt;DIVIDER&lt;/div&gt;
+
+
+コミュニティに泣きついたり&lt;br&gt;
+[WebコンパイラでBeeBotte?](https://japan.renesasrulz.com/gr_user_forum_japanese/f/gr-rose-iot/7493/web-beebotte)
+
+ ArduinoJsonとかの&lt;br&gt;バージョンに悩んだり&lt;br&gt;
+ ・・・
+&lt;br&gt;
+&lt;br&gt;
+ ### 奇跡的に自己解決
+
+
+
+&lt;div&gt;DIVIDER&lt;/div&gt;
+
+
+# Step.2
+----
+有線LANにトライする
+
+
+
+&lt;div&gt;DIVIDER&lt;/div&gt;
+
+
+今度もコミュニティに泣きついたら&lt;br&gt;
+[有線固定IPでMQTT](https://japan.renesasrulz.com/gr_user_forum_japanese/f/gr-rose-iot/7533/ip-mqtt)
+
+</code></pre>
+<p>有線LANでのPubSubClientライブラリ向けのClientクラスの実装は<br>
+していません。<br>
+MQTTサンプルで以下のインスタンスを作ってますが、<br>
+これに相当するEthernetのClientはないです。<br>
+すみませんが、EthernetクラスはROS用、AWS用の残骸のようなものなので、<br>
+使用できません。</p>
+<pre><code>
+### ・・・&lt;br&gt;人生、そう甘くはない
+
+
+&lt;div&gt;DIVIDER&lt;/div&gt;
+
+
+# Step.3
+----
+赤外線にトライする
+
+
+
+&lt;div&gt;DIVIDER&lt;/div&gt;
+
+
+## W.I.P
+
+ラズパイはググったコードで動いた&lt;br&gt;
+```python
+import 
+python xxxx
+</code></pre>
+<p>Pythonモジュールの中身なんて理解していない</p>
 
 </section>
 <section>
 
-<h2>Third vertical</h2>
+<p>すごく勉強になりました! <br><br>
+<a href="http://whatismcu.blogspot.com/2014/10/blog-post_17.html">赤外線リモコンを受ける その１</a><br><br>
+<a href="http://whatismcu.blogspot.com/2014/10/blog-post_6.html">赤外線リモコンを受ける その２</a><br><br>
+<a href="http://whatismcu.blogspot.com/2014/10/blog-post_23.html">赤外線リモコンを受ける その３</a></p>
 
-</section>
 </section>
 <section>
 
-<h2>Next horizontal</h2>
+<p><img src="img/2021103095405.jpg" alt="赤外線受信時の接続"></p>
+
+</section>
+<section>
+
+<h1>Step.4</h1>
+<hr>
+<p>赤外線受信する</p>
+
+</section>
+<section>
+
+<p>GR-KURUMIの記事を参考に <br><br>
+<a href="http://tool-cloud.renesas.com/ja/atelier/detail.php?id=36">GR-KURUMIの機能を使う 外部割り込み編</a></p>
+
+<p>受信のスケッチ作って<br>TVリモコンで「１、８、電源」を押下</p>
+<pre><code> remote control test.
+type NEC:sz=4 code:40,bf,01,fe,
+type NEC:sz=4 code:40,bf,08,f7,
+type NEC:sz=4 code:40,bf,12,ed,
+</code></pre>
+
+<p>我が家のTV電源は<br>「type NEC:sz=4 code:40,bf,12,ed,」<br>を送れば良いみたい</p>
+
+</section>
+<section>
+
+<h1>Step.5</h1>
+<hr>
+
+<p>赤外線送信する</p>
+
+</section>
+<section>
+
+<h3>ラズパイで使っていた<br>送信回路をGR-ROSEへ</h3>
+
+<p><img src="img/20211030100104.jpg" alt="rpi0からGR-ROSEへ"></p>
+
+</section>
+<section>
+
+<p>GR-KURUMIの記事を参考に <br><br>
+<a href="http://tool-cloud.renesas.com/ja/atelier/detail.php?id=36">GR-KURUMIの機能を使う 外部割り込み編</a></p>
+
+<p>受信のスケッチ作ってループ実行</p>
+
+<pre><code>remote control test.
+TV on.
+TV on.
+TV on.
+</code></pre>
+
+</section>
+<section>
+
+<h1>う・う・動いた</h1>
+
+</section>
+<section>
+
+<h2>感動です</h2>
+
+<p><img src="https://3.bp.blogspot.com/-KdDdg5JuVlA/VahRs57vf6I/AAAAAAAAvvg/Y5zyTEslbpg/s400/pose_kandou_man.png" alt="感動"></p>
+
+</section>
+<section>
+
+<h1>Step.6</h1>
+<hr>
+
+<p>BeeBotte情報を解析する</p>
+
+</section>
+<section>
+
+<h1>W.I.P.</h1>
+<p>CURL情報→ ArduinoJson表現</p>
+
+</section>
+<section>
+
+<h1>Step.7</h1>
+<hr>
+
+<p>外部割込みで赤外線送信</p>
+
+</section>
+<section>
+
+<h1>W.I.P.</h1>
+<p>参考記事</p>
+
+</section>
+<section>
+
+<h1>Step.8</h1>
+<hr>
+<p>スケッチにまとめました</p>
+
+</section>
+<section>
+
+<h1>W.I.P.</h1>
+<p>GitHub URL</p>
+
+</section>
+<section>
+
+<h1>大団円</h1>
+<hr>
+<p>感想とお礼</p>
+
+</section>
+<section>
+
+<h1>W.I.P.</h1>
+<p>・まとめ<br>
+	rpi python はモジュールの中身 BlackBox<br>
+	今回もしA*mだったら同じようになっていた<br>
+	→ がじぇるねさん・先人の皆様に感謝<br>
+	次はGR-ROSE本来の使い方 ROSにも挑戦したい(有線LAN使えるみたいだし^^)<br>
+	謝辞で一旦終了</p>
+
+</section>
+<section>
+
+<p><img src="img/20211030102649.jpg" alt="めでたしめでたし"></p>
+
+</section>
+<section>
+
+<h1>ちょっと<br>まったぁ〜</h1>
+
+</section>
+<section>
+
+<h2>応募要件</h2>
+
+</section>
+<section>
+
+<p>GR-ROSE＋Azureを使って<br>IoTシステムのアイデアを具現化</p>
+
+</section>
+<section>
+
+<h1>Azureを使って</h1>
+
+</section>
+<section>
+
+<h1>も、もちろん<br>
+</h1>
+<h1>使っております</h1>
+
+</section>
+<section>
+
+<h1>W.I.P.</h1>
+<p>Webコンパイラ画面<br>
+IP Address : AzureのCLI</p>
+
+</section>
+<section>
+
+<p><img src="https://3.bp.blogspot.com/-eB33fYMnmfk/USNoBWJQljI/AAAAAAAANP4/8mzUCL5TbFI/s1600/message_gomennasai.png" alt="ごめんなさい"></p>
 
 </section>
 
